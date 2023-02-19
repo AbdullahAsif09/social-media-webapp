@@ -1,0 +1,35 @@
+@import "../../style.scss";
+
+.profile-container{
+
+    @include themify($themes) {
+        background-color: themed("bgSoft");
+.profile {
+
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        margin-top: 60px;
+        // overflow-y: scroll;
+        height: 100%;
+   
+   
+        .info-profile{
+        margin-top: 10px;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid;
+        flex: 4;
+        }
+
+
+    }
+
+
+
+
+
+}}

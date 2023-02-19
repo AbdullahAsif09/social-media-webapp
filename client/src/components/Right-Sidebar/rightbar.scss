@@ -1,0 +1,61 @@
+@import "../../style.scss";
+
+.rightbar {
+    @include themify($themes) {
+    
+        
+    flex: 1;
+    margin-top: 20px;
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 10px;
+    gap: 1rem;
+    flex-direction: column;
+    position: sticky;
+    height: 87vh;
+    top: 70px;
+    overflow-y: scroll;
+    // border: 1px solid;
+    background-color: themed("bg");
+    color: themed("textColor");
+    
+    @include mobile {
+    display: none;
+    }
+    
+    @include tablet {
+    display: none;
+    }
+    
+    h2{
+        color: themed("textColorSoft");
+        font-size: larger;
+        // font-family: 'Lobster', cursive;
+        margin-left: auto;
+        margin-right: auto;
+        // font-family: 'Indie Flower', cursive;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid;
+        cursor: pointer;
+        gap: 1rem;
+
+        img{
+            // border: 1px solid;
+            overflow: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+        strong{
+            color: themed("textColorSoft");
+        }
+    }
+
+}
+}

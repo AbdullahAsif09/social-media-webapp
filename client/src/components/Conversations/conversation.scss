@@ -1,0 +1,31 @@
+  @import "../../style.scss";
+ 
+ .conversation{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 2px;
+   //  border: 1px solid;
+    width: 100%;
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+
+    img{
+       width: 30px;
+       height: 30px;
+       border-radius: 50%;
+       overflow: none;
+      }
+    strong{}
+
+   }
+   .conversation:hover{
+    @include themify($themes) {
+    background-color:themed("hoverbg");
+    transition: ease-in-out 0.3s;
+    border-radius: 3px;
+    overflow: none;
+    cursor: pointer;
+ }
+}

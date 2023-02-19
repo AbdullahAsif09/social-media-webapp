@@ -1,0 +1,99 @@
+@import "../../style.scss";
+
+
+
+.Share {
+    @include themify($themes) {
+    // margin-top: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    width: 100%;
+    background-color: themed("bg");
+
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+
+
+
+        .top{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+
+            img{
+                height: 30px;
+                width: 30px;
+                border: none;
+                border-radius: 50%;
+            }
+
+            input{
+                border: none;
+                outline: none;
+                padding: 5px;
+                width: 100%;
+                background-color: transparent;
+                color: themed("textColor");
+            }
+
+
+
+        }
+        .mid{
+        width: 100%;    
+        }
+        .shareImg{
+            img{
+                width: 400px;
+                height: 200px;
+                object-fit: cover;
+                position: relative;
+            }
+            .shareCancelImg{
+                position: absolute;
+            }
+        }
+        .bottom{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+
+
+
+            .item{
+                // border: 1px solid;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 0.5rem;
+                width: 100%;
+                cursor: pointer;
+
+
+                span{
+                    font-weight: 1000;
+                    color: gray;
+                }
+
+
+            }
+
+            Button{
+                margin-left: auto;
+                    }
+
+        }
+
+    }
+
+}}

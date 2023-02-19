@@ -1,0 +1,72 @@
+@import "../../style.scss";
+
+.post {
+    @include themify($themes) {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: themed("bg");
+
+    .info{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width:100%;
+        gap: 1rem;
+
+        img{
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+
+        strong{
+            color: themed("textColor");
+            cursor: pointer;
+        }
+
+        p{
+            color: themed("textColorSoft");
+            margin-left: auto ;
+            font-family: 'Lobster', cursive;
+            // font-family: 'Indie Flower', cursive;
+        }
+
+
+    }
+
+
+    p{
+        color: themed("textColorSoft");
+    }
+
+
+    img{
+        width: 100%;
+        border-radius: 3px;
+        overflow: hidden;
+        max-height: 350px;
+        object-fit: cover;
+    }
+
+    .reactions{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+
+        strong{
+            color: themed("textColor");
+        }
+    }
+
+
+ }
+}

@@ -1,0 +1,46 @@
+@import "../../style.scss";
+
+
+.leftbar{
+    @include themify($themes) {
+
+    display: flex;
+    position: sticky;
+    top: 70px;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: themed("bg");
+    color: themed("textColorSoft");
+
+
+    @include mobile {
+    display: none;
+    }
+    @include tablet {
+    display: none;
+    }
+
+
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 2rem;
+
+
+        strong{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    }
+}
+}

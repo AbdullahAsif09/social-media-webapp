@@ -1,0 +1,15 @@
+.onlineFriends{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    img{
+        width: 30px;
+        height: 30px;
+        border: 1px solid;
+        border-radius: 50%;
+    }
+    strong{
+
+    }
+}

@@ -1,0 +1,21 @@
+@import "../../style.scss";
+
+    .feeds{
+    @include themify($themes) {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    // border: 1px solid;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    @include tablet {
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+}
+}

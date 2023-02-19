@@ -1,0 +1,153 @@
+ @import "../../style.scss";
+     .messanger{
+     @include themify($themes) {
+    height: 100vh;
+    // overflow: hidden;
+    .container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:  10px; 
+        padding-top: 70px;
+        gap: 1rem;
+
+        .right{
+            flex: 1;
+            overflow: none;
+            height: 88vh;
+            background-color: themed("bg");
+
+            .wrapper{ 
+                // border: 1px solid;
+                padding: 10px 20px;
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                color: themed("textColorSoft");
+                gap: 1rem;
+                overflow-y: scroll;
+                .friendsOnline {
+                        // border: 1px solid;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 0.5rem;
+                
+                        img {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                        }
+                
+                        strong {
+                            cursor: pointer;
+                            color: themed("textColorSoft");
+                        }
+                    }
+
+                .listConversation{
+                    width: 100%;
+                }
+
+            }
+        }
+        .center{
+            flex: 3;
+            height: 88vh;
+            background-color: themed("bg");
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                height: 100%;
+                padding: 10px;
+
+
+            .topChat{
+                // border: 1px solid;
+                border-radius: 3px;
+                padding: 5px;
+                width: 100%;
+                height: 90%;
+                overflow-y: scroll;
+                color: themed("textColorSoft");
+
+            }
+
+            .bottomChat{
+                // border: 1px solid;
+                width: 100%;
+                display: flex;
+                gap: 0.5rem;
+                justify-content:center;
+                align-items: center;
+
+                input{
+                    width: 100%;
+                    // border: none;
+                    border: 1px solid;
+                    padding: 10px;
+                    outline: none;
+                    border-radius: 3px;
+                    color: themed("textColorSoft");
+                    background-color: transparent;
+                }
+            }
+
+
+            }
+        }
+        
+        .left{
+            flex: 1;
+            height: 88vh;
+            overflow-y: scroll;
+        .divider{
+            width: 80%;
+            margin: auto;
+        }
+        .wrapper {
+        padding: 10px 10px 20px ;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin: auto;
+        // border: 1px solid;
+        gap: 1rem;
+        }
+
+        .friendsOnline{
+            // border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+            strong{
+                cursor: pointer;
+            }
+        }
+
+        }
+
+
+
+
+    }
+
+
+     }
+
+}

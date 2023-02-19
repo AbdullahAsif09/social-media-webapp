@@ -1,0 +1,87 @@
+ @import "../../style.scss";
+
+
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    // border: 1px solid;
+    // gap: 1rem;
+
+
+
+
+    .top{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+
+
+        img{
+            width: 30px;
+            height: 30px;
+            // border: 1px solid;
+            border-radius: 50%;
+        }
+        strong{
+            background-color: #1976d2;
+            color: white;
+            padding: 10px;
+            border-radius: 7px;
+            overflow: none;
+        }
+    }
+    .bottom{
+        padding-left: 5px;
+    }
+
+
+
+}
+.message-own{
+    @include themify($themes) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 7px;
+    // border: 1px solid;
+
+
+
+    .top{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+
+
+        img{
+            width: 30px;
+            height: 30px;
+            // border: 1px solid;
+            border-radius: 50%;
+        }
+        strong{
+            // background-color: rgb(230, 230, 230);
+            background-color: themed("messagebg");
+            color: #1976d2;
+            // color: white;
+            padding: 10px;
+            border-radius: 7px;
+            overflow: none;
+        }
+    }
+    .bottom{
+        padding-right: 5px;
+    }
+
+
+
+}
+         }
